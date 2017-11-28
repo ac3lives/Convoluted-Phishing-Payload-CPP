@@ -1,5 +1,5 @@
-# Convoluted-Phishing-Payload-CPP-
-Batch file code for the convoluted phishing payload blog post at www.acenyethehackerguy.com
+# Convoluted Phishing Payload CPP
+Batch file code for the convoluted phishing payload blog post at http://www.acenyethehackerguy.com/2017/11/convoluted-phishing-payload.html
 
 #### How this payload works (I dub thee name 'CPP' - convoluted phishing payload):
 1. Delivered through a Microsoft Word document using Object Linking and Embedding (OLE)
