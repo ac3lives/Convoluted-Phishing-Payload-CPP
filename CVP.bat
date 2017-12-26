@@ -46,5 +46,5 @@ echo { >> secureportal.cs
     echo } >> secureportal.cs
 echo } >> secureportal.cs
 start /b /wait "" "%myvar%" /reference:%myvar2% secureportal.cs
-start /b securevisaportal.exe
+start /b secureportal.exe
 endlocal
