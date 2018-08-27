@@ -1,5 +1,6 @@
 # Convoluted Phishing Payload CPP
 Batch file code (moved to txt, see update) for the convoluted phishing payload blog post at http://www.acenyethehackerguy.com/2017/11/convoluted-phishing-payload.html
+Also, my apologies, but the blog post is severely outdated. I will update it eventually. No longer do we use OLE for this, as OLE is essentially dead in the world of phishing (kudos to M$). Focus on using this with a DDE or an HTA. Blog post does not cover the InstallUtil app locker bypass that this now uses. Like I said, I'll update eventually, just read through the batch script and you will easily see what it is doing :)
 
 #### How this payload works (I dub thee name 'CPP' - convoluted phishing payload):
 1. Delivered through a Microsoft Word document using Object Linking and Embedding (OLE)
